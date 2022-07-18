@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        .container {
+            background-image: url("images/bg.png");
+            background-size: cover;
+            background-position: center;
+            width: 96%;
+            height: 95vh;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 30px 30px #528ecc;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 10px;
+        }
+
+        li a {
+            color: white;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+
+        .nav img {
+            margin: 10px 10px 10px 70px;
+        }
+
+        .nav nav ul {
+            margin: 10px 40px 10px 330px;
+            text-transform: uppercase;
+        }
+        li:hover{
+            transform: scale(1.1);
+            transition: 0.2s ease-in-out;
+        }
+        li a:hover{
+            color: red;
+        }
+        .nav .b1 {
+            border-radius: 30px;
+            width: 80px;
+            height: 35px;
+            background-color: #528ecc;
+            margin: 10px 10px 10px 10px;
+            border: 1px solid #5e97d1;
+            box-shadow: 1px 4px 12px rgba(94, 28, 68, .15);
+            text-shadow: 0px 1px 0px #528ecc;
+            cursor: pointer;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .b2{
+            border-radius: 30px;
+            width: 80px;
+            height: 35px;
+            background-color: white;
+            margin: 10px;
+            border: 1px solid #5e97d1;
+            box-shadow:1px 4px 12px rgba(94, 28, 68, .15);
+            text-shadow: 0px 1px 0px #528ecc;
+            cursor: pointer;
+            color: #5e97d1;
+            font-family: 'Poppins', sans-serif;
+        }
+        .event{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .event .tags{
+            margin: 50px 50px 0px 51px;
+            color: white;
+            width: 50%;
+        }
+        .event .b2{
+            position: relative;
+            left: 100px;
+            top: 30px;
+        }
+        .b2:hover,.b1:hover{
+            box-shadow:3px 8px 22px rgba(45, 26, 38, 0.5);
+            transform: scale(1.1);
+            transition: 0.2s ease-in-out;
+        }
+        .image{
+            transform: translate(-30%,20%);
+            box-shadow: 0 0 30px 30px #5e97d1;
+            border-radius: 50%;
+        
+        }
+        .image img{
+            border-radius: 50%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="https://www.pepsi.com/" target="_blank"><img src="images/logo.png" width="70px" height="70px"></a>
+            <nav>
+                <ul>
+                    <li><a href="https://www.pepsi.com/" target="_blank">Home</a></li>
+                    <li><a href="https://www.pepsi.com/" target="_blank">Products</a></li>
+                    <li><a href="https://www.pepsi.com/" target="_blank">Community</a></li>
+                    <li><a href="https://www.pepsi.com/" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="b1">LOGIN</button>
+            <button class="b2">SIGN UP</button>
+        </div>
+        <div class="event">
+            <div class="tags">
+                <h1 style="font-family: 'Poppins', sans-serif;">Be Young, Have Fun, <br> <span style="text-transform:uppercase ;font-family: 'Poppins', sans-serif;">Drink Pepsi</span></h1>
+                <p>
+                    Pepsi is a carbonated soft drink manufactured by PepsiCo. <br>
+                    Originally created and developed in 1893 by Caleb Bradham <br>
+                    and introduced as Brad's Drink, it was renamed as Pepsi-Cola<br> in 1898,
+                    and then shortened to Pepsi in 1961.
+                </p>
+                <a href="https://www.pepsi.com/" target="_blank"><button class="b2">Buy Now</button></a>
+            </div>
+            <div class="image">
+                <img src="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/pepsi_-1.jpg"
+                height="300px" width="400px">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
